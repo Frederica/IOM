@@ -192,12 +192,52 @@ li:nth-child(4) {
 		display: block;
 		text-align: center;
 	}
-	
+	.about {
+		padding-left: 0; 
+		padding: 0 15px;
+		// display: inline-block;
+	}
+
+}
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Team section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#team {
+  position: relative;
+  margin-top: 2em;
+  
+  .bio {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 2em;
+  }
+  .headshot {
+    display: inline-block;
+    width: 80%;
+    border-radius: 50%;
+  }
+}
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Cause section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#cause {
+	position: relative;
+}
+
+#sponsors {
+	position: relative;
+	margin-top: 2em;
+	display: inline-block;
+    vertical-align: top;
+    padding-top: 2em;
+
 	.left {
 		display: inline-block;
 		float: left;
 		text-align: left;
-		padding-left: 15px;
+		// padding-left: 15px;
 	}
 	.right {
 		display: inline-block;
@@ -205,19 +245,7 @@ li:nth-child(4) {
 		text-align: right;
 		// padding-right: 15px;
 	}
-	.about {
-		padding-left: 0; 
-		padding: 0 15px;
-		// display: inline-block;
-
-	}
-
-	.blog {
-		padding-left: 15px;
-	}
-
 }
-
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 // Book section 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
@@ -248,24 +276,6 @@ li:nth-child(4) {
 
 }
 
-// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
-// Team section 
-// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
-#team {
-  position: relative;
-  margin-top: 2em;
-  
-  .bio {
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 2em;
-  }
-  .headshot {
-    display: inline-block;
-    width: 80%;
-    border-radius: 50%;
-  }
-}
 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 // Literacy section 

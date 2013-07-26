@@ -1,0 +1,288 @@
+@import url(http://fonts.googleapis.com/css?family=Overlock+SC|Averia+Gruesa+Libre|Enriqueta);
+
+body {
+	margin: 0 0; 
+	padding: 0 0;
+}
+
+.content {
+	background-color: #eee;
+	padding: 20px;
+	margin: 0 -20px;
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+h1 {
+	font-family: 'Enriqueta', sans-serif;
+	text-align: center;
+	top-padding: 50%;
+	font-size: 5em;
+	font-weight: 900;
+	color: white;
+}
+
+h2 {
+	font-family: 'Enriqueta', sans-serif;
+}
+
+h3 {
+	font-family: 'Enriqueta', sans-serif;
+}
+
+p {
+	font-family: 'Enriqueta', sans-serif;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+li{
+	list-style: none;
+
+}
+
+li:nth-child(4) {
+	// color: green; 
+	margin-right: 0 !important;   
+}
+
+.panel {
+	padding: 3em; 
+	background-color: white;
+	// margin: 40px;
+	border-bottom: 1px solid #F3F0E8;
+	background: #f7f5f3;
+	text-shadow: 0px 1px 0px white;
+
+	margin: 2em;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bg {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+
+	height: 800px;
+	overflow: hidden;
+	
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+
+	z-index: -1;
+}
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Banner section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#banner {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+
+	.bar {
+		position: absolute;
+		height: 20px;
+		width: 200px;
+		top: 0;
+		margin-left: 50%;
+		left: -100px;
+		z-index: 4;
+		background-color: white;
+	}
+
+	.headline {
+		position: relative;
+		color: white;
+		padding: 2em 0 0; 
+		margin-bottom: 0;
+		z-index: 3;
+	}
+
+	.sub{
+		padding-top:0;
+		margin-top:0;
+		font-weight:900;
+		text-align:right;
+	}
+
+	.index{
+		color:red;	
+		z-index: 3;
+	}
+
+	a{
+		color:red;
+		text-decoration:none;
+	}
+	.banner-meta {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 800px;
+		z-index: 1;
+		opacity: 0.5;
+		/* fallback */
+	  background-color: #2F2727;
+	  background-position: 20% 40%;
+	  background-repeat: no-repeat;
+	  /* Safari 4-5, Chrome 1-9 */
+	  background: -webkit-gradient(radial, 20% 40%, 0, 20% 40%, 100, from(#1a82f7), to(#2F2727));
+	  /* Safari 5.1+, Chrome 10+ */
+	  background: -webkit-radial-gradient(20% 40%, closest-corner, #1a82f7, #2F2727);
+	  /* Firefox 3.6+ */
+	  background: -moz-radial-gradient(20% 40%, closest-corner, #1a82f7, #2F2727);
+	  /* IE 10 */
+	  background: -ms-radial-gradient(20% 40%, closest-corner, #1a82f7, #2F2727);
+
+	  overflow: hidden;
+	}
+	.test {
+		width: 200px;
+		height: 200px;
+		background-color: blue;
+	}
+
+}
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Venture section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#venture {
+	position: relative;
+
+	.title {
+		display: block;
+		text-align: center;
+	}
+	
+	.left {
+		display: inline-block;
+		text-align: left;
+		.about {
+			padding-left: 0;
+			padding: 0 30px;;
+		}
+	}
+	.right {
+		display: inline-block;
+		text-align: left;
+		.about {
+			padding-left: 0; 
+			padding: 0 30px;
+		}
+	}
+
+}
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Book section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#book {
+
+	.panel-image {
+		float: right;
+	}
+
+	.about-the-book {
+		display: block;
+
+		.book-box {
+			display: inline-block;
+			margin-right: 100px;
+		}
+	}
+}
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Movie section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#movie {
+	.movie-box {
+		display: inline-block;
+		// margin-right: 100px;
+	}
+
+}
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Team section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#team {
+	position: relative;
+	
+	.bio {
+		display: inline-block;
+	}
+	.headshot {
+		display: inline-block;
+		width: 80%;
+		border-radius: 50%;
+	}
+}
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Literacy section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Sponsors section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// Team section 
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#engagement {
+	position: relative;
+	background-color: #40556a;
+
+	.engagement-content {
+		padding-top: 1em;
+
+		#social {
+
+			.social-media {
+				padding: 1em;
+				margin: 1em;
+				text-align: center;
+				border: 4px solid white;
+				display: inline-block;
+			}
+		}
+
+
+		.iom-element {
+			padding: .4em;
+			margin: .4em;
+			display: inline-block;
+		}
+
+	}
+	
+	.information {
+		margin-bottom: 0;
+		bottom: 0;
+		background-color: #324151;
+		color: white;
+
+		.info-box {
+			display: inline-block;
+			padding: 2em 0;
+		}
+
+	}
+}
+
+
+
+

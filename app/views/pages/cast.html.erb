@@ -1,0 +1,25 @@
+<div class="wrapper">
+	<ul class= "header span_12_of_12">
+		<li class="social-em"><%=link_to "INTERPRETOR OF MALADIES", root_path %></li>
+		<li class="social-em"><%= link_to(image_tag("webicons/webicon-tumblr.png", :class => "social-icon"), "http://www.facebook.com")%></li>
+		<li class="social-em"><%= link_to(image_tag("webicons/webicon-twitter.png", :class => "social-icon"), "http://www.facebook.com")%></li>
+		<li class="social-em"><%= link_to(image_tag("webicons/webicon-youtube.png", :class => "social-icon"), "http://www.facebook.com")%></li>
+		<li class="social-em"><%= link_to(image_tag("webicons/webicon-googleplus.png", :class => "social-icon"), "http://www.facebook.com")%></li>
+		<li class="social-em"><%= link_to(image_tag("webicons/webicon-facebook.png", :class => "social-icon"), "http://www.facebook.com")%></li>
+		<li class="social-em"><%= link_to(image_tag("webicons/webicon-pinterest.png", :class => "social-icon"), "http://www.facebook.com")%></li>
+	</ul>
+	<div class="background_image">
+		<%= image_tag('walker.jpeg', :class => "span_12_of_12",) %>
+	</div> 
+<div class ="footer span_12_of_12">
+		<table class="navigation">
+			<tr>
+				<td class="nav-em" id="story"><%=link_to "Story", story_path%></td>
+				<td class="nav-em" id="cast"><%=link_to "Cast", cast_path%></td>
+				<td class="nav-em" id="content"><%=link_to "Content", content_path %></td>
+				<td class="nav-em" id="cause"><%=link_to "Cause", cause_path%></td>
+				<td class="nav-em" id="engage"><%=link_to "Engage", engage_path%></td>
+			</tr>
+		</table>
+	</div>
+</div>

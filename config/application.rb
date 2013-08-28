@@ -19,10 +19,17 @@ module IOM
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.generators do |g|
+
+    end
 
     # Enable the asset pipeline
+    config.assets.compile = true
     config.assets.enabled = true
     config.assets.initialize_on_precompile = false
+
+    # Version of your assets, change this if you want to expire all your assets
+    config.assets.version = '1.0'
     
-  end
+    end
 end

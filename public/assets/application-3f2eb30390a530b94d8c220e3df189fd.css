@@ -1,0 +1,161 @@
+ul {
+  padding: 0 0; }
+  ul li {
+    list-style: none;
+    font-style: none;
+    text-decoration: none; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black; }
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+#header {
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black; }
+  #header #title {
+    display: inline-block;
+    vertical-align: top;
+    color: white; }
+  #header .title-text {
+    padding-left: 1em;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.15em; }
+  #header #socialmedia {
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 1em; }
+    #header #socialmedia #social {
+      display: inline;
+      vertical-align: top;
+      float: right; }
+    #header #socialmedia img.social-icon {
+      width: 1.5em;
+      display: inline;
+      vertical-align: top;
+      padding: 0.5em; }
+
+#navigation {
+  position: fixed;
+  bottom: 0;
+  z-index: 999999;
+  width: 100%; }
+
+.navigation {
+  position: relative;
+  top: 0;
+  background: black;
+  width: 100%;
+  padding: 0 0;
+  margin: 0 0;
+  border: none;
+  border-spacing: 0; }
+
+.nav-em {
+  width: 20%;
+  text-align: center;
+  padding: 0.25em 0em; }
+  .nav-em .nav-text {
+    text-decoration: none;
+    color: white; }
+
+#nav-story {
+  background-color: blue; }
+
+#nav-cast {
+  background-color: violet; }
+
+#nav-content {
+  background-color: red; }
+
+#nav-cause {
+  background-color: green; }
+
+#nav-engage {
+  background-color: purple; }
+
+#text-box {
+  width: 40%;
+  display: inline-block;
+  float: right;
+  height: 100%;
+  z-index: 1;
+  overflow: scroll; }
+  #text-box #page-text {
+    color: white;
+    padding-top: 15em;
+    padding-left: 4em;
+    padding-right: 4em;
+    opacity: 1; }
+    #text-box #page-text h2 {
+      opacity: 1; }
+    #text-box #page-text p {
+      padding-top: 2em;
+      border-top: double white;
+      opacity: 1; }
+
+#story {
+  background: url(handcar.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #story .story-background {
+    background-color: blue;
+    opacity: 0.7; }
+
+#cast {
+  background: url(walker.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #cast .cast-background {
+    background-color: violet;
+    opacity: 0.7; }
+
+#content {
+  background: url(home.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #content .content-background {
+    background-color: red;
+    opacity: 0.7; }
+
+#cause {
+  background: url(wheel.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #cause .cause-background {
+    background-color: green;
+    opacity: 0.7; }
+
+#engage {
+  background: url(kisser.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #engage .engage-background {
+    background-color: purple;
+    opacity: 0.7; }

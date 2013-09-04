@@ -2,6 +2,7 @@ IOM::Application.routes.draw do
   root :to => 'visitors#home'
 
   get 'story', :to => "pages#story", :as => "story"
+  get 'team', :to => "pages#team", :as => "team"
   get 'cast', :to => "pages#cast", :as => "cast"
   get 'cause', :to => "pages#cause", :as => "cause"
   get 'content', :to => "pages#content", :as => "content"

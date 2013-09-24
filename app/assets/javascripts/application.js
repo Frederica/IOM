@@ -22,27 +22,27 @@ $(document).ready(function(){
 	$('li#tab1').click(function (){
 		$('.tab-content').removeAttr('id')
 		$('.tab-content').eq(0).attr('id','current');
-		$('.connector').css('background', '#613318');
+		$('.connector').css('background', 'blue');
 	});
 	$('li#tab2').click(function (){
 		$('.tab-content').removeAttr('id')
 		$('.tab-content').eq(1).attr('id','current');
-		$('.connector').css('background', '#B99C6B');
+		$('.connector').css('background', 'violet');
 	});
 	$('li#tab3').click(function (){
 		$('.tab-content').removeAttr('id')
 		$('.tab-content').eq(2).attr('id','current');
-		$('.connector').css('background', '#4E6172');
+		$('.connector').css('background', 'green');
 	});
 	$('li#tab4').click(function (){
 		$('.tab-content').removeAttr('id')
 		$('.tab-content').eq(3).attr('id','current');
-		$('.connector').css('background', '#D57500');
+		$('.connector').css('background', 'purple');
 	});
 	$('li#tab5').click(function (){
 		$('.tab-content').removeAttr('id')
 		$('.tab-content').eq(4).attr('id','current');
-		$('.connector').css('background', '#8F3B1B');
+		$('.connector').css('background', 'olive');
 	});
 	
 });

@@ -5,12 +5,24 @@ ul
 		font-style: none
 		text-decoration: none
 
-$story: #613318
-$team: #B99C6B
-$cast: #4E6172
-$content: #8F3B1B
-$cause: #D57500
-$engage: #668D3C
+$story: rgb(0,0,255)
+$story-background: rgba(0,0,255, 0.7)
+
+$cast: rgb(238,130,238)
+$cast-background: rgba(238,130,238, 0.7)
+
+$team: rgb(128,128,0)
+$team-background: rgba(128,128,0, 0.7)
+
+$content: rgb(255,0,0)
+$content-background: rgba(255,0,0, 0.7)
+
+$cause: rgb(0,128,0)
+$cause-background: rgba(0,128,0, 0.7)
+
+$engage: rgb(128,0,128)
+$engage-background: rgba(128,0,128, 0.7)
+
 $black: black
 $white: white
 
@@ -31,6 +43,10 @@ body
 	right: 0
 	bottom: 0 
 	left: 0 
+.minwidth 
+	min-width: 500px
+	width: auto !important
+	width: 500px
 
 // header
 #header
@@ -45,17 +61,22 @@ body
 		display: inline-block
 		vertical-align: top
 		color: $white
+		min-width: 500px
+		
 	.title-text
 		padding-left: 1em
 		text-decoration: none
+		white-space: nowrap
 		color: $white
 		letter-spacing: 0.5
 
-	#socialmedia
+
+	#socialmedia 
 		float: right
 		display: inline-block
 		vertical-align: top
 		padding-right: 1em
+		white-space: nowrap
 		#social
 			display: inline
 			vertical-align: top
@@ -65,6 +86,8 @@ body
 			display: inline
 			vertical-align: top
 			padding: 0.5em
+		@media only screen and (max-width: 800px)
+			display: none
 
 // footer
 #navigation
@@ -84,9 +107,9 @@ body
 	border-spacing: 0
 
 .nav-em
-	width: 15%
+	width: 16.666666%
 	text-align: center
-	padding: 0.25em 0em
+	padding: 0.75em 0em
 	.nav-text
 		text-decoration: none
 		color: $white
@@ -94,9 +117,6 @@ body
 // styles the links
 #nav-story
 	background-color: $story
-
-#nav-team
-	background-color: $team
 
 #nav-cast
 	background-color: $cast
@@ -122,11 +142,9 @@ body
 	#page-text
 		color: $white
 		padding-top: 15em
-		padding-bottom: 5em
-		padding-left: 3em
+		padding-left: 4em
 		padding-right: 4em
 		opacity: 1
-
 		
 		h2
 			opacity: 1
@@ -134,25 +152,12 @@ body
 			padding-top: 2em
 			border-top: double $white
 			opacity: 1
-			min-width: 150px
 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
-// STORY and TEAM
+// STORY 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
-#team
-	background: url(walker.jpg)
-	no-repeat center center fixed 
-	-webkit-background-size: cover
-	-moz-background-size: cover
-	-o-background-size: cover
-	background-size: cover
-
-	.team-background
-		background-color: black
-		opacity: 0.7
-
 #story
-	background: url(handcar.jpg)
+	background: url(backgrounds/story.jpg)
 	no-repeat center center fixed 
 	-webkit-background-size: cover
 	-moz-background-size: cover
@@ -160,8 +165,8 @@ body
 	background-size: cover
 	
 	.story-background
-		background-color: black
-		opacity: 0.7
+		background: rgba(0, 0, 0, 0.7)
+//box
 #v-nav
 	width: 25%
 	display: absolute
@@ -186,19 +191,22 @@ body
 	text-align: left
 	padding-left: 1.5em
 
+//Tabs
+.tab
+	color: white
 #tab1
 	background: $story
 #tab2
-	background: $team
-#tab3
 	background: $cast
-#tab4
+#tab3
 	background: $cause
+#tab4
+	background: $engage
 #tab5
-	background: $content
+	background: $team
 
 .connector
-	width: 1.5em
+	width: 3%
 	background: $story
 	display: inline-block
 	margin-top: 15%
@@ -208,31 +216,40 @@ body
 .tab-content
 	position: absolute
 	opacity: 0
-	width: 60%
-	p
-		margin-left: 3em
-		margin-right: 4em
-	ul 
-		margin-left: 4em
-		margin-right: 4em
+	padding: 1em
+
 #current
 	opacity: 1
 	color: white
 
 #story-box
-	width: 60%
+	width: 72%
 	display: inline-block
 	margin-top: 15%
-	margin-left: -4px
+	margin-left: -5px
 	height: 55%
 	z-index: 1
 	overflow: scroll
 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+// TEAM
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+#team
+	background: url(backgrounds/team.jpg)
+	no-repeat center center fixed 
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+	.team-background
+		background: rgba(0, 0, 0, 0.7)
+
+// ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 // CAST 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 #cast
-	background: url(walker.jpg)
+	background: url(backgrounds/cast.jpg)
 	no-repeat center center fixed 
 	-webkit-background-size: cover
 	-moz-background-size: cover
@@ -240,15 +257,14 @@ body
 	background-size: cover
 
 	.cast-background
-		background-color: $cast
-		opacity: 0.7
+		background-color: $cast-background
 
 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 // CONTENT 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 #content
-	background: url(home.jpg)
+	background: url(backgrounds/home.jpg)
 	no-repeat center center fixed 
 	-webkit-background-size: cover
 	-moz-background-size: cover
@@ -256,15 +272,14 @@ body
 	background-size: cover
 
 	.content-background
-		background-color: $content
-		opacity: 0.7
+		background-color: $content-background
 
 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 // CAUSE 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 #cause
-	background: url(wheel.jpg)
+	background: url(backgrounds/cause.jpg)
 	no-repeat center center fixed 
 	-webkit-background-size: cover
 	-moz-background-size: cover
@@ -272,15 +287,14 @@ body
 	background-size: cover
 
 	.cause-background
-		background-color: $cause
-		opacity: 0.7
+		background-color: $cause-background
 
 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 // ENGAGE 
 // ---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
 #engage
-	background: url(kisser.jpg)
+	background: url(backgrounds/engage.jpg)
 	no-repeat center center fixed 
 	-webkit-background-size: cover
 	-moz-background-size: cover
@@ -288,5 +302,4 @@ body
 	background-size: cover
 
 	.engage-background
-		background-color: $engage
-		opacity: 0.7
+		background-color: $engage-background
